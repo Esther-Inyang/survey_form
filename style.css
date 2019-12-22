@@ -1,0 +1,182 @@
+body{
+    background-color: #59965a;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    color: #333333;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 70%;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #333333;
+    padding: 50px 30px 50px 30px;
+    margin: 80px auto 50px;
+    background: #fbf8f8;
+}
+
+#title{
+    color: #59965a;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 5px 10px 5px 10px;
+    background: #ffffff;
+    display: inline;
+    text-shadow: 1px 1px 1px #333333;
+    border-bottom: 1px solid #333333;
+}
+
+#description {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+#survey-form{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 50px;
+    outline: 1px solid #333333;
+    background-color: #fbf8f8;
+}
+
+fieldset{
+    border-radius: 10px;
+    border: 1px solid #59965a;
+    padding: 20px;
+}
+
+legend{
+    font-size: 30px;
+    font-weight: 600;
+    color: #59965a;
+    text-shadow: 1px 0px 1px #333333;
+}
+
+label{
+    font-size: 19px;
+}
+
+input[type="text"], 
+input[type="number"], select{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none; 
+    border: 2px solid lightgray;
+    margin: 10px 0px;
+}
+
+input[type="text"]:focus{
+    border-color: #59965a;
+}
+
+input[type="number"]:focus{
+    border-color: #59965a;
+}
+#dropdown{
+    font-size: 19px;
+}
+select{
+    width: 60%;
+    font-size: 17px;
+}
+
+select:focus{
+    border-color: #59965a;
+}
+
+#checkbox-question, #radio-question{
+    font-weight: 600;
+    font-size: 19px;
+    margin: 20px 0 5px 0;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+#comment{
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+input[type="submit"]{
+    width: 100px;
+    margin: 20px 0 20px 0;
+    padding: 5px;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none; 
+    border-radius: 3px;
+    border: 1px solid #59965a;
+    background-color: #86de87;
+}
+
+input[type="submit"]:hover{
+    color: #fbf8f8;
+    background: #59965a;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        width: 90%;
+    }
+
+    #title{
+        font-size: 35px;
+    }
+
+    #survey-form{
+        width: 80%;
+    }
+
+    select{
+        width: 75%;
+        font-size: 15px;
+    }
+
+    input[type="submit"]{
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    header{
+        width: 95%;
+        margin-top: 50px;
+    }
+
+    #title{
+        font-size: 28px;
+    }
+
+    #survey-form{
+        width: 90%;
+    }
+
+    select{
+        width: 80%;
+        font-size: 14px;
+    }
+}

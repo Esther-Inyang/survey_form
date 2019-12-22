@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey-form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1 id="title">SURVEY - FORM</h1>
+            <p id="description">Please fill the form below to let us know how you feel about our services. Note that your Privacy is guaranteed. No information provided in this form will be used or seen by the public.</p>
+        </header>
+
+        <form id="survey-form">
+            <fieldset> 
+                <legend>Survey form</legend>
+
+                <!--input fields-->
+                <!--forms should show VALIDATE ERROR-->
+                <label for="Name" id="name-label">First name:</label>
+                <input type="text" id="name" placeholder="Enter First Name" required><br/>
+
+                <label for="Name" id="name-label">Last name:</label>
+                <input type="text" id="name" placeholder="Enter Last Name" required><br/>
+                
+                <label for="Email" id="email-label">Email:</label>
+                <input type="text" id="email" placeholder="Enter Your Email" validate><br/>
+
+                <label for="number" id="number-label" >Number:</label>
+                <input type="number" id="number"  placeholder="Enter Your Number" min="0" max="15" validate><br/>
+
+                <!--Selection-->
+                <label for="option" id="dropdown">Select Your Favourite:</label>
+                <select>
+                    <option>Food</option>
+                    <option>Drinks</option>
+                    <option>Fruits</option>
+                    <option>Meat</option>
+                    <option>Utensils</option>
+                    <option>Beverages</option>
+                    <option>Vegetables</option>
+                </select><br/>
+
+                <!--Radio buttons. Each group should be grouped
+                using the name attribute.-->
+                <p id="radio-question">What would you like to take home today?</p>
+                
+                <input type="checkbox" value="checked">
+                <label for="checkbox">Food</label><br/>
+
+                <input type="checkbox" value="checked">
+                <label for="checkbox">Meat</label><br/>
+
+                <input type="checkbox" value="checked">
+                <label for="checkbox">Drinks</label><br/>
+                
+                <input type="checkbox" value="checked">
+                <label for="checkbox">Fruits</label><br/>
+                
+                <input type="checkbox" value="checked">
+                <label for="checkbox">Utensils</label><br/>
+                
+                <input type="checkbox" value="checked">
+                <label for="checkbox">Beverages</label><br/>
+
+                <input type="checkbox" value="checked">
+                <label for="checkbox">Vegetables</label><br/>
+
+                <!--Checkbox. what is the VALUE-->
+                <p id="checkbox-question">How do you see our services?</p>
+                <input type="radio" name="radio" >
+                <label for="radio">Excellent</label><br/>
+                
+                <input type="radio" name="radio" >
+                <label for="radio">Very good</label><br/>
+
+                <input type="radio" name="radio" >
+                <label for="radio">Good</label><br/>
+
+                <input type="radio" name="radio" >
+                <label for="radio">Not Good</label><br/>
+
+                <input type="radio" name="radio" >
+                <label for="radio">None</label><br/>
+                
+                <!--textarea-->
+                <p id="comment">We'll appreciate your comment</p>
+                <textarea placeholder="Please Enter Your Comment here..."></textarea><br/>
+
+                <!--Submit button-->
+                <input type="submit" value="Submit">
+            
+            </fieldset>
+        </form>
+
+
+    </div>
+</body>
+</html>
