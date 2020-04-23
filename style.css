@@ -87,11 +87,11 @@ input[type="number"]:focus{
     border-color: #59965a;
 }
 
-#dropdown{
+#select{
     font-size: 19px;
 }
 
-select{
+#dropdown{
     width: 60%;
     font-size: 15px;
 }

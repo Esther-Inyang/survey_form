@@ -14,25 +14,22 @@
             <p id="description">Please fill the form below to let us know how you feel about our services. Note that your Privacy is guaranteed. No information provided in this form will be used or seen by the public.</p>
         </header>
 
-        <form id="survey-form" action="https://www.freecodecamp/email-submit" method="POST" target="_blank">
+        <form id="survey-form" action="https://www.freecodecamp.com/email-submit" method="POST" target="_blank">
             <fieldset> 
                 <legend>Survey form</legend>
 
-                <label for="firstname" id="name-label">First name:</label>
-                <input type="text" id="firstname" name="name" placeholder="Enter First Name" required><br/>
-
-                <label for="lastname" id="name-label">Last name:</label>
-                <input type="text" id="lastname" name="name" placeholder="Enter Last Name" required><br/>
+                <label for="name" id="name-label">Full name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter full name" required><br/>
                 
                 <label for="email" id="email-label">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email" required><br/>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br/>
 
                 <label for="number" id="number-label">Pick a number:</label>
-                <input type="number" id="number" name="number" placeholder="Enter Your Number" min="0" max="9" required><br/>
+                <input type="number" id="number" name="number" placeholder="Pick a number" min="0" max="9" required><br/>
 
                 <!--Selection-->
-                <label for="select" id="dropdown">Select your best package:</label>
-                <select type="select" id="select" name="select" required>
+                <label for="dropdown" id="select">Select your best package:</label>
+                <select type="select" id="dropdown" name="select" required>
                     <option value="--your favourite choice--" disabled selected>--your favourite choice--</option>
                     <option value="food">Food</option>
                     <option value="drinks">Drinks</option>
