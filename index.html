@@ -14,89 +14,85 @@
             <p id="description">Please fill the form below to let us know how you feel about our services. Note that your Privacy is guaranteed. No information provided in this form will be used or seen by the public.</p>
         </header>
 
-        <form id="survey-form">
+        <form id="survey-form" action="https://www.freecodecamp/email-submit" method="POST" target="_blank">
             <fieldset> 
                 <legend>Survey form</legend>
 
-                <!--input fields-->
-                <!--forms should show VALIDATE ERROR-->
-                <label for="Name" id="name-label">First name:</label>
-                <input type="text" id="name" placeholder="Enter First Name" required><br/>
+                <label for="firstname" id="name-label">First name:</label>
+                <input type="text" id="firstname" name="name" placeholder="Enter First Name" required><br/>
 
-                <label for="Name" id="name-label">Last name:</label>
-                <input type="text" id="name" placeholder="Enter Last Name" required><br/>
+                <label for="lastname" id="name-label">Last name:</label>
+                <input type="text" id="lastname" name="name" placeholder="Enter Last Name" required><br/>
                 
-                <label for="Email" id="email-label">Email:</label>
-                <input type="text" id="email" placeholder="Enter Your Email" validate><br/>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email" required><br/>
 
-                <label for="number" id="number-label" >Number:</label>
-                <input type="number" id="number"  placeholder="Enter Your Number" min="0" max="15" validate><br/>
+                <label for="number" id="number-label">Pick a number:</label>
+                <input type="number" id="number" name="number" placeholder="Enter Your Number" min="0" max="9" required><br/>
 
                 <!--Selection-->
-                <label for="option" id="dropdown">Select Your Favourite:</label>
-                <select>
-                    <option>Food</option>
-                    <option>Drinks</option>
-                    <option>Fruits</option>
-                    <option>Meat</option>
-                    <option>Utensils</option>
-                    <option>Beverages</option>
-                    <option>Vegetables</option>
+                <label for="select" id="dropdown">Select your best package:</label>
+                <select type="select" id="select" name="select" required>
+                    <option value="--your favourite choice--" disabled selected>--your favourite choice--</option>
+                    <option value="food">Food</option>
+                    <option value="drinks">Drinks</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="meat">Meat</option>
+                    <option value="utensils">Utensils</option>
+                    <option value="beverages">Beverages</option>
+                    <option value="vegetables">Vegetables</option>
                 </select><br/>
 
-                <!--Radio buttons. Each group should be grouped
-                using the name attribute.-->
-                <p id="radio-question">What would you like to take home today?</p>
-                
-                <input type="checkbox" value="checked">
-                <label for="checkbox">Food</label><br/>
 
-                <input type="checkbox" value="checked">
-                <label for="checkbox">Meat</label><br/>
+                <p id="checkbox-question">What would you like to take home today?</p>
+                <input type="checkbox" name="checkbox" value="food" id="food">
+                <label for="food">Food</label><br/>
 
-                <input type="checkbox" value="checked">
-                <label for="checkbox">Drinks</label><br/>
-                
-                <input type="checkbox" value="checked">
-                <label for="checkbox">Fruits</label><br/>
-                
-                <input type="checkbox" value="checked">
-                <label for="checkbox">Utensils</label><br/>
-                
-                <input type="checkbox" value="checked">
-                <label for="checkbox">Beverages</label><br/>
+                <input type="checkbox" name="checkbox" value="meat" id="meat">
+                <label for="meat">Meat</label><br/>
 
-                <input type="checkbox" value="checked">
-                <label for="checkbox">Vegetables</label><br/>
+                <input type="checkbox" name="checkbox" value="drinks" id="drinks">
+                <label for="drinks">Drinks</label><br/>
+                
+                <input type="checkbox" name="checkbox" value="fruits" id="fruits">
+                <label for="fruits">Fruits</label><br/>
+                
+                <input type="checkbox" name="checkbox" value="utensils" id="utensils">
+                <label for="utensils">Utensils</label><br/>
+                
+                <input type="checkbox" name="checkbox" value="beverages" id="beverages">
+                <label for="beverages">Beverages</label><br/>
+
+                <input type="checkbox" name="checkbox" value="vegetables" id="vegetables">
+                <label for="vegetables">Vegetables</label><br/>
 
                 <!--Checkbox. what is the VALUE-->
-                <p id="checkbox-question">How do you see our services?</p>
-                <input type="radio" name="radio" >
-                <label for="radio">Excellent</label><br/>
+                <p id="radio-question">How do you see our services?</p>
+                <input type="radio" name="radio" id="excellent" value="excellent">
+                <label for="excellent">Excellent</label><br/>
                 
-                <input type="radio" name="radio" >
-                <label for="radio">Very good</label><br/>
+                <input type="radio" name="radio" id="vgood" value="very good">
+                <label for="vgood">Very good</label><br/>
 
-                <input type="radio" name="radio" >
-                <label for="radio">Good</label><br/>
+                <input type="radio" name="radio" id="good" value="good">
+                <label for="good">Good</label><br/>
 
-                <input type="radio" name="radio" >
-                <label for="radio">Not Good</label><br/>
+                <input type="radio" name="radio" id="notgood" value="not good">
+                <label for="notgood">Not Good</label><br/>
 
-                <input type="radio" name="radio" >
-                <label for="radio">None</label><br/>
+                <input type="radio" name="radio" id="none" value="none">
+                <label for="none">None</label><br/>
                 
                 <!--textarea-->
                 <p id="comment">We'll appreciate your comment</p>
-                <textarea placeholder="Please Enter Your Comment here..."></textarea><br/>
+                <textarea name="textarea" placeholder="Please Enter Your Comment here..."></textarea><br/>
 
                 <!--Submit button-->
-                <input type="submit" value="Submit">
-            
+                <button type="submit" id="submit">Submit</button>
             </fieldset>
         </form>
-
-
     </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
